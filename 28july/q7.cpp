@@ -22,13 +22,47 @@ int main(){
     int year;
     cin >> year;
     int zodiac = year % 12;
-    cout << "zodiac = " << zodiac;
-    if(zodiac = 0){
-        cout << "Monkey";
+    cout << "zodiac = " << zodiac << "\n";
+    switch (zodiac)
+    {
+    case 0:
+        cout << " monkey";
+        break;
+    case 1:
+        cout << " is Rooster";
+        break;
+    case 2:
+        cout << " is Dog";
+        break;
+    case 3:
+        cout << " is Pig";
+        break;
+    case 4:
+        cout << "rat";
+        break;
+    case 5:
+        cout << "ox";
+        break;
+    case 6:
+        cout << "tiger";
+        break;
+    case 7:
+        cout << "rabbit";
+        break;
+    case 8:
+        cout << "dragon";
+        break;
+    case 9:
+        cout << "snake";
+        break;
+    case 10:
+        cout << "horse";
+        break;
+    case 11:
+        cout << "sheep";
+        break;
+    default:
+        cout << "Invalid year";
     }
-    else if(zodiac = 1){
-        cout << "Rooster";
-    }
-    
     return 0;
     }
