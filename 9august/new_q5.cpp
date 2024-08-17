@@ -7,17 +7,32 @@
 using namespace std;
 
 int main() {
+//     int account_balance = 100000;
+//     int withdrawal_amount = 0;
+
+//     cout << "Enter the withdrawal amount" << "\n";
+//     cin >> withdrawal_amount;
+
+//     int new_balance = account_balance - withdrawal_amount;
+//     int flag = (new_balance >= 0) ? 1 : 0;
+
+//     cout << (flag ? "Withdrawal successful" : "Insufficient balance") << "\n";
+//     cout << "Account balance after withdrawal is " << (flag ? new_balance : account_balance) << "\n";
+
+//     return 0;
+// }
+
     int account_balance = 100000;
     int withdrawal_amount = 0;
-
-    cout << "Enter the withdrawal amount" << "\n";
-    cin >> withdrawal_amount;
-
-    int new_balance = account_balance - withdrawal_amount;
-    int flag = (new_balance >= 0) ? 1 : 0;
-
-    cout << (flag ? "Withdrawal successful" : "Insufficient balance") << "\n";
-    cout << "Account balance after withdrawal is " << (flag ? new_balance : account_balance) << "\n";
-
-    return 0;
+    bool is_withdrawal_done = false;
+    if (withdrawal_amount <= account_balance){
+        cout << "withdrawal successful" << '\n';
+        is_withdrawal_done = true;
+    }
+    if (!is_withdrawal_done)
+    {
+        cout << "insufficient balance" << '\n';
+    }
 }
+    
+
