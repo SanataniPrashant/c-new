@@ -56,4 +56,31 @@
 //     }
 //     return 0;
 // }
-    
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 0, sum = 0;
+//     cin >> n;
+//     for(int i = 2; i < n; i+=2){
+//         sum = sum + i;
+//     }
+//     cout << sum ;
+//     return 0;
+// }  
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 0, factorial = 1;
+//     cin >> n;
+//     while(n != 0){
+//         factorial = factorial * n;
+//         n--;
+//     }
+//     cout << factorial;
+//     return 0;
+// }
+
