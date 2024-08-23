@@ -6,30 +6,95 @@
 //     a
 
 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     cout << "enter any character" << "\n";
+//     char symbol = 0;
+//     cin >> symbol;
+//     for (int i = 0; i <5; i++)
+//     {
+//         // space
+//        for (int j = 0; j < i; j++)
+//         {
+//            cout << " "; 
+//         }
+//         for(int k = 9; k >(2*i); k--)
+//         {
+//             cout << symbol;
+//         }
+//         // space
+//         for (int j = 0; j < i; j++)
+//         {
+//            cout << " "; 
+//         }
+//         cout << "\n";
+//     }
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     cout << "enter any character" << "\n";
+//     char symbol = 0;
+//     cin >> symbol;
+//     for (int i = 0; i <5; i++)
+//     {
+//         // space
+//        for (int j = 5; j > i; j--)
+//         {
+//            cout << " "; 
+//         }
+//         for(int k = 0; k <= (2*i); k++)
+//         {
+//             cout << symbol;
+//         }
+//         // space
+//         for (int j = 5; j > i; j--)
+//         {
+//            cout << " "; 
+//         }
+//         cout << "\n";
+//     }
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i = 1; i <= 4; i++)
+//     {
+//         for(int j = 4; j>i ; j--)
+//         {
+//             cout << " ";
+//         }
+//         for(int k = 1; k <= i; k++)
+//         {
+//             cout << "x ";
+//         }
+//         cout <<"\n";
+//     }
+//     return 0;
+// }
 #include<iostream>
 using namespace std;
 int main()
 {
-    cout << "enter any character" << "\n";
-    char symbol = 0;
-    cin >> symbol;
-    for (int i = 0; i <5; i++)
+    for(int i = 1; i <= 4; i++)
     {
-        // space
-       for (int j = 0; j < i; j++)
+        for(int j = 4; j>i ; j--)
         {
-           cout << " "; 
+            cout << " ";
         }
-        for(int k = 9; k >(2*i); k--)
+        for(int k = 1; k <= i; k++)
         {
-            cout << symbol;
+            cout << "x ";
         }
-        // space
-        for (int j = 0; j < i; j++)
-        {
-           cout << " "; 
-        }
-        cout << "\n";
+        cout <<"\n";
     }
     return 0;
 }
