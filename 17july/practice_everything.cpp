@@ -97,20 +97,60 @@
 // }
 
 // 4. Write a program to accept number from user, until user press 0 to exit. Print the count of all the entered number exclude 0
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int count = 0;
+//     int number = 0;
+//     do
+//     {
+//         cout << "Enter the no." << "\n";
+//         cin >> number;
+//         count ++;
+//     } while (number != 0);
+//     cout << "Total no. of numbers entered excluding 0 is " << count - 1;
+//     return 0;
+// }
+    
+// 5.    Write a program to accept number from user, until user press 0 to exit. Print the average of all the entered number
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int number = 0;
+//     int sum = 0;
+//     int count = 0;
+//     do
+//     {
+//         cout << "Enter the no. and press 0 for exit" << "\n";
+//         cin >> number;
+//         sum = sum + number;
+//         count ++;
+//     } while (number != 0);
+//     int average = sum / (count - 1);
+//     cout << "Average of all the entered number is " << average << "\n";
+//     return 0;
+// }
+
+// 6. Write a program to accept number from user, until user press 0 to exit Print the count of all the entered even number exclude 0.
+#include<iostream>
 using namespace std;
 int main()
 {
-    int count = 0;
     int number = 0;
+    int count = 0;
     do
     {
-        cout << "Enter the no." << "\n";
+        cout << "Enter the no. and press 0 for exit" << "\n";
         cin >> number;
-        count ++;
-    } while (number != 0);
-    cout << "Total no. of numbers entered excluding 0 is " << count - 1;
+        if (number != 0 && number % 2 == 0)
+        {
+            count ++;
+        }
+    }
+    while (number != 0);
+    cout << "Count of all the entered even number excluding 0 is " << count << "\n";
     return 0;
 }
-    
-    
