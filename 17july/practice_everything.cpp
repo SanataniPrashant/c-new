@@ -135,22 +135,189 @@
 // }
 
 // 6. Write a program to accept number from user, until user press 0 to exit Print the count of all the entered even number exclude 0.
-#include<iostream>
-using namespace std;
-int main()
-{
-    int number = 0;
-    int count = 0;
-    do
-    {
-        cout << "Enter the no. and press 0 for exit" << "\n";
-        cin >> number;
-        if (number != 0 && number % 2 == 0)
-        {
-            count ++;
-        }
-    }
-    while (number != 0);
-    cout << "Count of all the entered even number excluding 0 is " << count << "\n";
-    return 0;
-}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int number = 0;
+//     int count = 0;
+//     do
+//     {
+//         cout << "Enter the no. and press 0 for exit" << "\n";
+//         cin >> number;
+//         if (number != 0 && number % 2 == 0)
+//         {
+//             count ++;
+//         }
+//     }
+//     while (number != 0);
+//     cout << "Count of all the entered even number excluding 0 is " << count << "\n";
+//     return 0;
+// }
+// 7. Write a program that calculates the sum of all even numbers from 1 to a given number N and print the sum. Accept the number N from user.
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     cout << "Enter the input no." << "\n";
+//     int input = 0, sum = 0;
+//     cin >> input;
+//     while (input != 0)
+//     {
+//         if(input % 2 == 0)
+//         {
+//             sum = sum + input;
+//         }
+//         input --;
+//     }
+//     cout << " sum = " << sum << "\n";
+//     return 0;
+// }
+
+// 8. Implement a program that computes the factorial of a given number N using a loop and print the factorial. Accept the number N from user.
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int number = 0, factorial = 1;
+//     cout << "Enter the input no." << "\n";
+//     cin >> number;
+//     while (number != 0)
+//     {
+//         factorial = factorial * number;
+//         number --;
+//     }
+//     cout << " factorial = " << factorial;
+//     return 0;
+// }
+
+//9.Write a program that checks if a given integer inputNumber is prime number, if yes print inputNumber is prime number otherwise print inputNumber is not a prime number. Accept the inputNumber from user.
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int input_Number = 0, flag = 0;
+//     cout << "Enter the input no." << "\n";
+//     cin >> input_Number;
+//     for (int i = 1; i <= input_Number; i++)
+//     {
+//         if (input_Number % i == 0)
+//         {
+//             flag++;
+//         }
+//     }
+//     if(flag == 2)
+//     {
+//         cout << "the given no. is a prime no." << "\n";
+//     }
+//     else
+//     {
+//         cout << "the given no. is not a prime no." << "\n";
+//     }
+//     return 0;
+// }
+
+// 10. Write a program to print the first N numbers in the Fibonacci sequence. Accept the number N from user. Constrain N >= 0 and N <= 20. (keep value of N small. )
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int N = 0, a = 0, b = 1;
+//     cout << "enter the no." << "\n";
+//     cin >> N;
+//     cout << "The first " << N << " Fibonacci numbers are: " << "\n";
+//     for (int i = 0; i < N; i++) 
+//     {
+//         cout << a << "\n";
+//         int temp = a;
+//         a = b;
+//         b = temp + b;
+//     }
+//     return 0;
+// }
+
+//11. Write a program to print the sum of first N numbers in the Fibonacci sequence. Accept the number N from user. Constrain N >= 0 and N <= 20. (keep value of N small. )
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int N = 0, a = 0, b = 1, sum = 0;
+//     cout << "enter the no." << "\n";
+//     cin >> N;
+//     cout << "The first " << N << " Fibonacci numbers are: " << "\n";
+//     for (int i = 0; i < N; i++) 
+//     {
+//         cout << a << "\n";
+//         sum = sum + a;
+//         int temp = a;
+//         a = b;
+//         b = temp + b;
+//     }
+//     cout << "sum = " << sum << '\n';
+//     return 0;
+// }
+
+//12.
+//Write a program to check if a given three-digit number N is an Armstrong number if yes, print Armstrong number otherwise print Not an Armstrong number. Accept the three-digit number N from user
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     cout << "Enter the no." << "\n";
+//     int input = 0;
+//     cin >> input;
+//     int a = input % 10;
+//     int b = (input / 10) % 10;
+//     int c = input / 100;
+//     int sum = a*a*a + b*b*b + c*c*c;
+//     if (sum == input)
+//     {
+//         cout << "Armstrong number" << "\n";
+//     }
+//     else
+//     {
+//         cout << "Not an Armstrong number" << "\n";
+//     }
+//     return 0;
+// }
+
+//13. Generate the multiplication table for a given number N up to 10. Accept the number N from user.
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int input = 0;
+//     cout << "Enter the no." << "\n";
+//     cin >> input;
+//     for (int i = 1; i <= 10; i++)
+//     {
+//         cout << input << " * " << i << " = " << input * i << "\n";
+//     }
+//     return 0;
+// }
+
+// 14. Write a program to calculate numberpower (number raised to the power) using a loop. Accept the number and power from user.
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int input = 0;
+//     int power = 0;
+//     cout << "Enter the no." << "\n";
+//     cin >> input;
+//     cout << "Enter the power" << "\n";
+//     cin >> power;
+//     int result = 1;
+//     for (int i = 1; i <= power; i++)
+//     {
+//         result = result * input;
+//     }
+//     cout << "result = " << result;
+//     return 0;
+// }
