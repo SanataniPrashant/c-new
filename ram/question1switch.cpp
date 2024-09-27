@@ -182,9 +182,54 @@
 //     }
 // }
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    
-}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a = 0, b = 0, c = 0;
+//     cout << "Enter 1 for addition.: " << "\n";
+//     cout << "Enter 2 for  subtraction.: " << "\n";
+//     cout << "Enter 3 for multiplication.: " << "\n";
+//     cout << "Enter 4 for division.: " << "\n";
+//     cin >> c;
+//     switch(c)
+//     {
+//         case 1:
+//         {
+//             cout << "Enter the first no.: " << "\n";
+//             cin >> a;
+//             cout << "Enter the second no.: " << "\n";
+//             cin >> b;
+//             cout << "Addition of " << a << " and " << b << " is " << a + b << "\n";
+//             break;
+//         }
+//         case 2:
+//         {
+//             cout << "Enter the first no.: " << "\n";
+//             cin >> a;
+//             cout << "Enter the second no.: " << "\n";
+//             cin >> b;
+//             cout << "substraction of " << a << " and " << b << " is " << a - b << "\n";
+//             break;
+//         }
+//         case 3:
+//         {
+//             cout << "Enter the first no.: " << "\n";
+//             cin >> a;
+//             cout << "Enter the second no.: " << "\n";
+//             cin >> b;
+//             cout << "Multiplication of " << a << " and " << b << " is " << a * b << "\n";
+//             break;
+//         }
+//         case 4:
+//         {
+//             cout << "Enter the Dividend.: " << "\n";
+//             cin >> a;
+//             cout << "Enter the divisor.: " << "\n";
+//             cin >> b;
+//             cout << "division of " << a << " and " << b << " is " << a / b << "\n";
+//             break;
+//         }
+//     }
+//     return 0;
+// }
