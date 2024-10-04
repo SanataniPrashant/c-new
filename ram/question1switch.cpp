@@ -1,14 +1,26 @@
 // W.A.P to take the the hours and minutes and then show that weather it is AM or PM by using switch-case statement
-// #include<iostream>
-// using namespace std;
-// int main(){
-//     int hours, minutes;
-//     cout<<"Enter the hours: " << "\n";
-//     cin >> hours;
-//     cout<<"Enter the minutes: " << "\n";
-//     cin >> minutes;
-    
-// }
+#include<iostream>
+using namespace std;
+int main(){
+    int hours, minutes;
+    cout<<"Enter the hours (0-23): " << "\n";
+    cin >> hours;
+    cout<<"Enter the minutes (0-59): " << "\n";
+    cin >> minutes;
+    if( hours < 0 || hours > 23 || minutes < 0 || minutes > 59){
+        cout<<"Invalid time" << "\n";
+        return 1;
+    }
+    switch(hours/12){
+        case 0:
+        cout<<"AM" << "\n";
+        break;
+        case 1:
+        cout<<"PM" << "\n";
+        break;
+    }
+    return 0;
+}
 
 // W.A.P to print the days of week using switchcase taking input as number
 // #include<iostream>
