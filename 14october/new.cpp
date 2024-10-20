@@ -65,5 +65,23 @@
 using namespace std;
 int main()
 {
-    
+
 }
+
+// hello everyone i'm prashant pandey and today i'm here to present
+// an e-commerce website. and the name of the website name is digital store.
+// first of all now we are living in 20th century or we can say in mordern era
+// where the reality is we don't wan to go multiple shops or electronic 
+// or digital stores for purchasing any item its time of online shoppings.
+// now i think its dital time so my target customers are those people who wants digital
+// products like laptops, mobiles, tablets, smart watches, smart phones, etc. to make their
+// life easy and simple. so my target customers are those people who are interested 
+// in digital products.
+// the website is designed to sell all digital and electronic products online.
+
+
+// this website is different from others like it has very easy-to use, fast and user-friendly
+//interface.because if you have user-friendly interface the user will definately use your platform in market there are many 
+// payment applications but most of the people are using phonepay or paytm because they have user-friendly interface
+//  it has very simple and easy navigation. it has very good customer support.
+//e-mail addicates
