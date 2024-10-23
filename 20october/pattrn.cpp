@@ -161,3 +161,269 @@
 //     return 0;
 // }
 
+
+// A
+// A B
+// A B C
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=1; i<=3; i++)
+//     {
+//         for(int j=1; j<=i; j++)
+//         {
+//             cout<<char(j+64)<<"\t";
+//         }
+//         cout<<"\n";
+//     }
+//     return 0;
+// }
+
+//or
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=65; i<=67; i++)
+//     {
+//         for(int j=65; j<=i; j++)
+//         {
+//             cout<<char(j)<<"\t";
+//         }
+//         cout<<"\n";
+//     }
+//     return 0;
+// }
+
+//or 
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(char i='A'; i<='C'; i++)
+//     {
+//         for(char j='A'; j<=i; j++)
+//         {
+//             cout<<j<<"\t";
+//         }
+//         cout<<"\n";
+//     }
+// }
+
+
+
+// A
+// B B
+// C C C
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=1; i<=3; i++)
+//     {
+//         for(int j=1; j<=i; j++)
+//         {
+//             cout<<char(i+64)<<"\t";
+//         }
+//         cout<<"\n";
+//     }
+//     return 0;
+// }
+
+//or  
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=65; i<=67; i++)
+//     {
+//         for(int j=65; j<=i; j++)
+//         {
+//             cout<<char(i)<<"\t";
+//         }
+//         cout<<"\n";
+//     }
+//     return 0;
+// }
+
+// A
+// B C
+// D E F
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int r = 1;
+//     for(int i=1; i<=3; i++)
+//     {
+//         for(int j=1; j<=i; j++)
+//         {
+//             cout<<char(r+64)<<"\t";
+//             r++;
+//         }
+//         cout<<"\n";
+//     }
+//     return 0;
+// }
+
+// a
+// b c
+// d e f
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int r = 1;
+//     for(int i=1; i<=3; i++)
+//     {
+//         for(int j=1; j<=i; j++)
+//         {
+//             cout<<char(r+96)<<"\t";
+//             r++;
+//         }
+//         cout<<"\n";
+//     }
+//     return 0;
+// }
+
+//  *
+// **
+//***
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=1; i<=3; i++)
+//     {
+//         for(int j=3; j>i; j--)
+//         {
+//             cout << " ";
+//         }
+//         for(int k=1;k<=i; k++){
+//             cout << "*";
+//         }
+//         cout<<"\n";
+//     }
+// }
+
+//  1
+// 23
+//456
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n=1;
+//     for(int i=1; i<=3; i++)
+//     {
+//         for(int j=3; j>i; j--)
+//         {
+//             cout << " ";
+//         }
+//         for(int k=1;k<=i; k++){
+//             cout << n;
+//             n++;
+//         }
+//         cout<<"\n";
+//     }
+// }
+
+//  1
+// 22
+//333
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=1; i<=3; i++)
+//     {
+//         for(int j=3; j>i; j--)
+//         {
+//             cout << " ";
+//         }
+//         for(int k=1;k<=i; k++){
+//             cout <<i;
+//         }
+//         cout<<"\n";
+//     }
+// }
+
+//  A
+// BB
+//CCC
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=1; i<=3; i++)
+//     {
+//         for(int j=3; j>i; j--)
+//         {
+//             cout << " ";
+//         }
+//         for(int k=1;k<=i; k++){
+//             cout <<char(i+64);
+//         }
+//         cout<<"\n";
+//     }
+// }
+
+//  A
+// BC
+//DEF
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int r=1;
+//     for(int i=1; i<=3; i++)
+//     {
+//         for(int j=3; j>i; j--)
+//         {
+//             cout << " ";
+//         }
+//         for(int k=1;k<=i; k++){
+//             cout << char(r+64);
+//             r++;
+//         }
+//         cout<<"\n";
+//     }
+// }
+
+
+//  1
+// 21
+//321
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=1; i<=3; i++)
+//     { 
+//         for(int j=3; j>i; j--)
+//         {
+//             cout << " ";
+//         }
+//         for(int k=i;k>=i; k--){
+//             cout << k;
+//         }
+//         cout<<"\n";
+//     }
+// }
+
+//  A
+// BA
+//CBA
