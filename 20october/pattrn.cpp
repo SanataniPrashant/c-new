@@ -512,3 +512,67 @@
 //         cout<<"\n";
 //     }
 // }
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int d=1;
+//     for(int i=1; i<=5; i++)
+//     {
+//         for(int j=5; j>i; j--)
+//         {
+//             cout << " ";
+//         }
+//         for(int k=1;k<=i; k++){
+//             if(d == 1){
+//                 cout<<"1 ";
+//                 d--;
+//             }
+//             else{
+//                 cout<<"0 ";
+//                 d++;
+//             }
+//         }
+//         cout<<"\n";
+//     }
+// }
+
+// ***
+// **
+// *
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=1; i<=5; i++)
+//     {
+//         for(int j=5; j>i; j--)
+//         {
+//             cout << "* ";
+//         }
+//         cout<<"\n";
+//     }
+// }
+
+// ***
+//  **
+//   *
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    for(int i=1; i<=5; i++)
+    {
+        for(int j=1; j<=i; j++)
+        {
+            cout <<" ";
+        }
+        for(int k=5;k>=i; k--){
+            cout<< "*";
+        }
+        cout<<"\n";
+    }
+}
