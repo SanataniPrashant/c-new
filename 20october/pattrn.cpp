@@ -449,6 +449,11 @@
 
 //full pyramid
 
+//     * 
+//    * * 
+//   * * * 
+//  * * * * 
+// * * * * * 
 // #include<iostream>
 // using namespace std;
 // int main()
@@ -466,6 +471,11 @@
 //     }
 // }
 
+//     1 
+//    0 1 
+//   1 0 1 
+//  0 1 0 1
+// 1 0 1 0 1
 // #include<iostream>
 // using namespace std;
 // int main()
@@ -560,19 +570,96 @@
 //  **
 //   *
 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=1; i<=5; i++)
+//     {
+//         for(int j=1; j<=i; j++)
+//         {
+//             cout <<" ";
+//         }
+//         for(int k=5;k>=i; k--){
+//             cout<< "*";
+//         }
+//         cout<<"\n";
+//     }
+// }
+
+// *****
+// *   *
+// *   *
+// *   *
+// *   *
+// *****
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=1; i<=5; i++)
+//     {
+//         for(int j=1; j<=5; j++)
+//         {
+//             if((i==1|| j==1)||(i==5 ||j==5)) {
+//                 cout<< "*";
+//             }
+//             else{
+//                 cout<<" ";
+//             }
+//         } 
+//         cout<<"\n";
+//     }
+// }
+
+// * * * * *
+// * *   * *
+// *   *   *
+// * *   * *
+// * * * * *
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     for(int i=1; i<=5; i++){
+//         for(int j=1; j<=5;j++){
+//             if(i == 1 || j==1 || i==5 || j==5 || i==j || (i+j) == 6)
+//             {
+//                 cout<<"* ";
+//             }
+//             else
+//             {
+//                 cout <<"  ";
+//             }
+//         }
+//         cout << "\n";
+//     }
+//     return 0;
+// }
+
 #include<iostream>
 using namespace std;
 int main()
 {
-    for(int i=1; i<=5; i++)
+    int n = 0;
+    cout << "Enter the value of n" << "\n";
+    cin >> n;
+    for(int i=1; i<=n; i++)
     {
+        for(int k=n; k>i; k--){
+            cout << " ";
+        }
         for(int j=1; j<=i; j++)
         {
-            cout <<" ";
+            if((i+j)%2==0){
+                cout << "1 ";
+            }
+            else{
+                cout << "0 ";
+            }
         }
-        for(int k=5;k>=i; k--){
-            cout<< "*";
-        }
-        cout<<"\n";
+        cout << "\n";
     }
 }
