@@ -639,6 +639,31 @@
 //     return 0;
 // }
 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 0;
+//     cout << "Enter the value of n" << "\n";
+//     cin >> n;
+//     for(int i=1; i<=n; i++)
+//     {
+//         for(int k=n; k>i; k--){
+//             cout << " ";
+//         }
+//         for(int j=1; j<=i; j++)
+//         {
+//             if((i+j)%2==0){
+//                 cout << "1 ";
+//             }
+//             else{
+//                 cout << "0 ";
+//             }
+//         }
+//         cout << "\n";
+//     }
+// }
+
 #include<iostream>
 using namespace std;
 int main()
@@ -653,7 +678,7 @@ int main()
         }
         for(int j=1; j<=i; j++)
         {
-            if((i+j)%2==0){
+            if((i+j)%2!=0){
                 cout << "1 ";
             }
             else{
