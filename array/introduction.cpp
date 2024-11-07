@@ -16,3 +16,54 @@
 // {
 //     It is more secure because It is accessed through its key(It is unique and random and cannot reapeate).
 // }
+
+
+// ==>> one-Dimentional Array :
+
+// =>  In one-Dimentional Array we can use only one subscript that belongs to the size of an array. 
+// =>  We can create static array as well as dynamic array 
+// =>  We can use loop to traverse the array.
+
+// Syntax:
+// datatype arrayname[size]; or
+// datatype arrayname[size] = {value1, value2, value3, …, valueN};
+// =>>  Static Array :
+// =>  It is a fixed size array that is created at the time of compilation.
+// =>  It is a memory efficient array because it is created at the time of compilation.
+// =>  It is a faster array because it is created at the time of compilation.
+// example:
+// int arr[5] = {1, 2, 3, 4, 5};
+// =>> Dynamic array:
+// =>  It is a variable size array that is created at the time of execution.
+// =>  It is a memory inefficient array because it is created at the time of execution.
+// =>  It is a slower array because it is created at the time of execution.
+// example:
+// int *arr = new int[5];
+// Differences Between Static and Dynamic Arrays:
+
+// Memory Allocation:
+// Static arrays: Allocated on the stack at compile time.
+// Dynamic arrays: Allocated on the heap at runtime.
+
+// Size Flexibility:
+// Static arrays: Fixed size.
+// Dynamic arrays: Size can be changed during execution.
+
+// Initialization:
+// Static arrays: Can be initialized at declaration.
+// Dynamic arrays: Must be allocated and initialized using pointers.
+
+
+// Program of one-dimentional static array:
+#include<iostream>
+using namespace std;
+int main() 
+{
+    int arr[5] = {11, 22, 33, 44, 55};
+    cout<<"Elements of array are: "<<endl;
+    for(int i=0; i<5; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
