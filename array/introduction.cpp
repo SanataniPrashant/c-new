@@ -55,15 +55,27 @@
 
 
 // Program of one-dimentional static array:
+// #include<iostream>
+// using namespace std;
+// int main() 
+// {
+//     int arr[5] = {11, 22, 33, 44, 55};
+//     cout<<"Elements of array are: "<<endl;
+//     for(int i=0; i<5; i++)
+//     {
+//         cout<<arr[i]<<" ";
+//     }
+//     return 0;
+// }
+
+// w.a.p to count and print the length of array
 #include<iostream>
 using namespace std;
-int main() 
+int main()
 {
-    int arr[5] = {11, 22, 33, 44, 55};
-    cout<<"Elements of array are: "<<endl;
-    for(int i=0; i<5; i++)
-    {
-        cout<<arr[i]<<" ";
-    }
+    int arr[]={1,2,1,2,1,2,5,6,4,5,5,4,5};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    cout<<"Length of array is: "<<n<<endl;
+    cout<<arr[13];
     return 0;
 }
