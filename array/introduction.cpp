@@ -69,13 +69,18 @@
 // }
 
 // w.a.p to count and print the length of array
-#include<iostream>
-using namespace std;
-int main()
-{
-    int arr[]={1,2,1,2,1,2,5,6,4,5,5,4,5};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    cout<<"Length of array is: "<<n<<endl;
-    cout<<arr[13];
-    return 0;
-}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[]={1,2,1,2,1,2,5,6,4,5,5,4,5};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     cout<<"Length of array is: "<<n<<endl;
+//     cout<<arr[13];
+//     return 0;
+// }
+
+// int arr[3]={1,2,3} output - 1,2,3.
+// int arr[3]={1,2,3,4} outpu t- error.
+// int arr[3]={1} output - 1,0,0.
+// int arr[3]; output - garbage.
