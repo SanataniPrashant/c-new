@@ -76,7 +76,6 @@
 //     int arr[]={1,2,1,2,1,2,5,6,4,5,5,4,5};
 //     int n = sizeof(arr)/sizeof(arr[0]);
 //     cout<<"Length of array is: "<<n<<endl;
-//     cout<<arr[13];
 //     return 0;
 // }
 
@@ -84,3 +83,53 @@
 // int arr[3]={1,2,3,4} outpu t- error.
 // int arr[3]={1} output - 1,0,0.
 // int arr[3]; output - garbage.
+
+
+// Array traversing: by using loop when we go-through with each element of array 
+// forward traversing
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[]={1,2,3,4,5,6,7,8};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     for(int i=0; i<=n-1;i++)
+//     {
+//         cout<<arr[i]<<"\n";
+//     }
+// }
+
+// backward traversing
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={1,2,3,4,5,6,7,8};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    arr[4]=-4[arr];
+    cout<<arr[4]<<"\n";
+    //   arr[2]=(-1)*arr[2];
+        arr[2]=-2[arr];
+       cout<<arr[2] <<"\n";
+    for(int i=n-1; i>=0;i--)
+    {
+        cout<<i[arr]<<"\n";
+    }
+  
+   
+    // cout<<arr[-4]<<"\t";
+    // cout<<-4[arr]<<"\n"<<"nrew";
+    // cout<<arr[4];
+
+}
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     //int arr[];   // error
+//     int arr[]={}; //no error
+//     cout<<"Size of array is: "<<sizeof(arr)<<endl;
+//     cout<< 4[arr] or arr[4];
+// }
