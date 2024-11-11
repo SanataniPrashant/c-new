@@ -152,16 +152,34 @@
 //     }
 // }
 
-// w.a.p to display the sum of the values of array
+// w.a.p to display the sum of the values of array.
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={1,2,3,4,5};
+//     int sum=0;
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<= siz-1; i++){
+//         sum=sum+a[i];
+//     }
+//     cout << sum;
+// }
+
+// w.a.p to display the minimum of the values of array.
 #include<iostream>
 using namespace std;
 int main()
 {
-    int a[]={1,2,3,4,5};
-    int sum=0;
+    int a[]={15,22,3,4,5};
+    int min = a[0];
     int siz=sizeof(a)/sizeof(a[0]);
     for(int i=0;i<= siz-1; i++){
-        sum=sum+a[i];
+        if(a[i]<min){
+            min=a[i];
+        }
     }
-    cout << sum;
+    cout <<min ;
+    cout<<INT64_MAX << "\n";
+    cout<<INT64_MIN;
 }
