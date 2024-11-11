@@ -101,28 +101,28 @@
 
 // backward traversing
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    int arr[]={1,2,3,4,5,6,7,8};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    arr[4]=-4[arr];
-    cout<<arr[4]<<"\n";
-    //   arr[2]=(-1)*arr[2];
-        arr[2]=-2[arr];
-       cout<<arr[2] <<"\n";
-    for(int i=n-1; i>=0;i--)
-    {
-        cout<<i[arr]<<"\n";
-    }
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[]={1,2,3,4,5,6,7,8};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     arr[4]=-4[arr];
+//     cout<<arr[4]<<"\n";
+//     //   arr[2]=(-1)*arr[2];
+//         arr[2]=-2[arr];
+//        cout<<arr[2] <<"\n";
+//     for(int i=n-1; i>=0;i--)
+//     {
+//         cout<<i[arr]<<"\n";
+//     }
   
    
-    // cout<<arr[-4]<<"\t";
-    // cout<<-4[arr]<<"\n"<<"nrew";
-    // cout<<arr[4];
+//     // cout<<arr[-4]<<"\t";
+//     // cout<<-4[arr]<<"\n"<<"nrew";
+//     // cout<<arr[4];
 
-}
+// }
 
 // #include<iostream>
 // using namespace std;
@@ -133,3 +133,35 @@ int main()
 //     cout<<"Size of array is: "<<sizeof(arr)<<endl;
 //     cout<< 4[arr] or arr[4];
 // }
+
+
+
+// bug in array 
+// out of bound 
+// exception handling 
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int a[]={1,2,3,4,5};
+//     a[9]=900;
+//     cout<<a[9];
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0 ;i<siz;i++){
+//         cout<<a[i];
+//     }
+// }
+
+// w.a.p to display the sum of the values of array
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a[]={1,2,3,4,5};
+    int sum=0;
+    int siz=sizeof(a)/sizeof(a[0]);
+    for(int i=0;i<= siz-1; i++){
+        sum=sum+a[i];
+    }
+    cout << sum;
+}
