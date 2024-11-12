@@ -167,19 +167,49 @@
 // }
 
 // w.a.p to display the minimum of the values of array.
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={15,22,3,4,5};
+//     int min = a[0];
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<= siz-1; i++){
+//         if(a[i]<min){
+//             min=a[i];
+//         }
+//     }
+//     cout <<min ;
+//     cout<<INT64_MAX << "\n";
+//     cout<<INT64_MIN;
+// }
+
+// w.a.p to display the maximum of the values of array.
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={15,22,3,4,5};
+//     int min = a[0];
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<= siz-1; i++){
+//         if(a[i]>min){
+//             min=a[i];
+//         }
+//     }
+// }
+
+// w.a.p to print only even no. in array.
 #include<iostream>
 using namespace std;
 int main()
 {
-    int a[]={15,22,3,4,5};
-    int min = a[0];
+    int a[]={1,2,3,4,5,6,7,8,9,10};
     int siz=sizeof(a)/sizeof(a[0]);
     for(int i=0;i<= siz-1; i++){
-        if(a[i]<min){
-            min=a[i];
+        if(a[i]%2==0){
+            cout << a[i] << "\n";
         }
     }
-    cout <<min ;
-    cout<<INT64_MAX << "\n";
-    cout<<INT64_MIN;
+    return 0;
 }
