@@ -200,16 +200,111 @@
 // }
 
 // w.a.p to print only even no. in array.
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={1,2,3,4,5,6,7,8,9,10};
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<= siz-1; i++){
+//         if(a[i]%2==0){
+//             cout << a[i] << "\n";
+//         }
+//     }
+//     return 0;
+// }
+
+// w.a.p to print only odd no. in array.
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={1,2,3,4,5,6,7,8,9,10};
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<= siz-1; i++){
+//         if(a[i]%2!=0){
+//             cout << a[i] << "\n";
+//         }
+//     }
+//     return 0;
+// }
+
+// w.a.p to display the second maximum of the values of array.
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+    
+//     int a[]={11,3,4,590,6,7,8,99,10};
+//     int max1=0, max2=0;
+//     max2=INT64_MIN;
+//     max1=max2;
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     int second=0;
+//     for(int i=0;i<= siz-1; i++){
+//         if(a[i]>max1){
+//             max2=max1;
+//             max1=a[i];
+//         }
+//         else if(a[i]>max2 && a[i]!=max1){
+//             max2=a[i];
+//         }
+//     }
+//     cout<<max2;
+//     return 0;
+// }
+
+// 1.w.a.p to find the prime no. in a given array arr[]={7,6,11,5} output- 7,11,5
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={7,6,11,5};
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<siz;i++)
+//     {
+//         int count=0;
+//         for(int j=1;j<=a[i];j++){
+//             if(a[i]%j==0){
+//                 count++;
+//             }
+//         }
+//         if(count==2){
+//             cout<<a[i]<<" ";
+//         }
+//     }
+// }
+
+// 2. w.a.p to replace 1 with 0 in a given array arr[]={2,1,3,1,5,1} output- {2,0,3,0,5,0}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={2,1,3,1,5,1};
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<siz;i++){
+//         if(a[i]==1){
+//             a[i]=0;
+//         }
+//         cout<< a[i] << "\t";
+//     }
+// }
+
+// 3. w.a.p to sheift all zero atlast by holding reletive position ?
+// arr[]={2,0,7,0,3,0,6}
+// output - {2,7,3,6,0,0,0}
+
 #include<iostream>
 using namespace std;
 int main()
 {
-    int a[]={1,2,3,4,5,6,7,8,9,10};
+    int a[]={2,0,7,0,3,0,6};
     int siz=sizeof(a)/sizeof(a[0]);
-    for(int i=0;i<= siz-1; i++){
-        if(a[i]%2==0){
-            cout << a[i] << "\n";
-        }
-    }
-    return 0;
+    
+
 }
+
+
+
+
