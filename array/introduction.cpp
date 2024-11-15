@@ -240,7 +240,6 @@
 //     max2=INT64_MIN;
 //     max1=max2;
 //     int siz=sizeof(a)/sizeof(a[0]);
-//     int second=0;
 //     for(int i=0;i<= siz-1; i++){
 //         if(a[i]>max1){
 //             max2=max1;
@@ -254,13 +253,37 @@
 //     return 0;
 // }
 
+// w.a.p to display the second minimum of the values of array.
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+    
+//     int a[]={11,34,44,590,6,74,8,99,10};
+//     int min1=0, min2=0;
+//     min2=INT32_MAX;
+//     min1=min2;
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<= siz-1; i++){
+//         if(a[i]<min1){
+//             min2=min1;
+//             min1=a[i];
+//         }
+//         else if(a[i]<min2 && a[i]!=min1){
+//             min2=a[i];
+//         }
+//     }
+//     cout<<min2;
+//     return 0;
+// }
+
 // 1.w.a.p to find the prime no. in a given array arr[]={7,6,11,5} output- 7,11,5
 
 // #include<iostream>
 // using namespace std;
 // int main()
 // {
-//     int a[]={7,6,11,5};
+//     int a[]={7,6,11,5,1};
 //     int siz=sizeof(a)/sizeof(a[0]);
 //     for(int i=0;i<siz;i++)
 //     {
@@ -268,6 +291,9 @@
 //         for(int j=1;j<=a[i];j++){
 //             if(a[i]%j==0){
 //                 count++;
+//             }
+//             if(a[i]==1){
+//                 count=2;
 //             }
 //         }
 //         if(count==2){
@@ -295,16 +321,115 @@
 // arr[]={2,0,7,0,3,0,6}
 // output - {2,7,3,6,0,0,0}
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    int a[]={2,0,7,0,3,0,6};
-    int siz=sizeof(a)/sizeof(a[0]);
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={2,0,7,0,3,0,6};
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<siz;i++){
+//         if(a[i]!=0){
+//             cout<< a[i]<<"\n";
+//         }
+//         if(a[i]==0){
+//             for(int j=i;j<siz;j++){
+//                 int temp = a[j];
+//                 a[j]=a[j+1];
+//                 a[j+1]=temp;
+//             }
+//             cout << a[i]<<"\n";
+//         }
+//     }
     
+// }
 
-}
+// w.a.p to find out the sum of all odd no. in array
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={2,5,7,10,13,8,6};
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     int sum=0;
+//     for(int i=0;i<siz;i++){
+//         if(a[i]%2!=0){
+//             sum=sum+a[i];
+//             cout<<a[i]<< "\n";
+//         }
+//     }
+//     cout <<"sum = " << sum;
+// }
 
 
+// w.a.p to find valid square root of no. in given array
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={64,5,81,10,121,8,6,2,4};
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<siz;i++){
+//         for(int j=0; j*j<=(a[i]);j++) // for(int j=0; j<=(a[i]/2);j++) it is thoda jyada time complexity lega
+//         { 
+//             if(j*j==a[i]){
+//                 cout << a[i] <<'\n';
+//                 break;
+//             }
+//             cout << j <<"\n";
+//         }
+//     }
+// }
+
+// w.a.p to sort array in acending order
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={5,2,8,1,9,4,7,6};
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<siz;i++){
+//         int temp=0;
+//         for(int j=0;j<siz-1;j++){
+//             if(a[j]>a[j+1]){
+//                 // temp=a[j+1];
+//                 // a[j+1]=a[j];
+//                 // a[j]=temp;
+//                 a[j]=a[j+1]+a[j];
+//                 a[j+1]=a[j]-a[j+1];
+//                 a[j]=a[j]-a[j+1];
+//             }
+//         }
+//     }
+//     for(int k=0; k<siz; k++){
+//         cout << a[k] << " ";
+//     }
+// }
+
+
+// w.a.p to sort array in decending order
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={5,2,8,1,9,4,7,6};
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<siz;i++){
+//         int temp=0;
+//         for(int j=0;j<siz-1;j++){
+//             if(a[j]<a[j+1]){
+//                 // temp=a[j+1];
+//                 // a[j+1]=a[j];
+//                 // a[j]=temp;
+//                 a[j]=a[j+1]+a[j];
+//                 a[j+1]=a[j]-a[j+1];
+//                 a[j]=a[j]-a[j+1];
+//             }
+//         }
+//     }
+//     for(int k=0; k<siz; k++){
+//         cout << a[k] << " ";
+//     }
+// }
 
 
