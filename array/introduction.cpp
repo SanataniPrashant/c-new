@@ -303,29 +303,29 @@
 // }
 
 // or
-#include<iostream>
-using namespace std;
-int main()
-{
-    int a[]={7,6,11,5,1};
-    int siz=sizeof(a)/sizeof(a[0]);
-    for(int i=0;i<siz;i++)
-    {
-        int n = a[i];
-        int r = n-1;
-        bool b = true;
-        for(r;r>1;r--)
-        {
-            if(n%r==0){
-                b=false;
-                break;
-            }
-        }
-        if(b){
-            cout<<a[i]<<" ";
-        }
-    }
-}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[]={7,6,11,5,1};
+//     int siz=sizeof(a)/sizeof(a[0]);
+//     for(int i=0;i<siz;i++)
+//     {
+//         // int n = a[i];
+//         int r = a[i]-1;
+//         bool b = true;
+//         for(r;r>1;r--)
+//         {
+//             if(a[i]%r==0){
+//                 b=false;
+//                 break;
+//             }
+//         }
+//         if(b){
+//             cout<<a[i]<<" ";
+//         }
+//     }
+// }
 
 
 // 2. w.a.p to replace 1 with 0 in a given array arr[]={2,1,3,1,5,1} output- {2,0,3,0,5,0}
@@ -352,21 +352,19 @@ int main()
 // using namespace std;
 // int main()
 // {
-//     int a[]={2,0,7,0,3,0,6};
+//     int a[]={2,0,7,0,0,3,0,6};
 //     int siz=sizeof(a)/sizeof(a[0]);
-//     for(int i=0;i<siz;i++){
-//        
-//             for(int j=i;j<siz-1;j++){
-//  if(a[j]==0){
-//                 int temp = a[j+1];
-//                 a[j+1]=a[j];
-//                 a[j]=temp;
-//  }
+//     for(int i=0;i<siz;i++)
+//     {
+//         for(int j=i;j<siz-1;j++){
+//             if(a[j]==0){
+//             int temp = a[j+1];
+//             a[j+1]=a[j];
+//             a[j]=temp;
 //             }
-//             cout << a[i]<<"\n";
 //         }
+//         cout << a[i]<<"\n";
 //     }
-    
 // }
 
 // w.a.p to find out the sum of all odd no. in array
