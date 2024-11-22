@@ -115,48 +115,113 @@
 // return 0;
 // }
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int r = 0, c = 0;
+//     cout << "Enter the no. of row" << "\n";
+//     cin >> r;
+//     cout << "Enter the no. of column" << "\n";
+//     cin >> c;
+//     if(r==c){
+//         int arr[r][c];
+//         cout << "Enter the " <<r*c<< " values" << '\n';
+//         for(int i=0; i<r; i++){
+//             for(int j=0; j<c; j++){
+//                 cin>>arr[i][j];
+//             }
+//         }
+//         cout<<"Matrix ="<<"\n";
+//         for(int i=0; i<r; i++){
+//             for(int j=0; j<c; j++){
+//                 cout<< arr[i][j] << "\t";
+//             }
+//             cout << "\n";
+//         }
+//         cout << "The transpose of the matrix is= "<< "\n";
+//          for(int i=0; i<r; i++){
+//             for(int j=i+1; j<c; j++){
+//                 int temp =arr[i][j];
+//                 arr[i][j]=arr[j][i];
+//                 arr[j][i]=temp;
+//             }
+//         }
+//         for(int i=0; i<r; i++){
+//             for(int j=0; j<c; j++){
+//                 cout<< arr[i][j] << "\t";
+//             }
+//             cout << "\n";
+//         }
+//     }
+//     else{
+//         cout << "not allowed";
+//     }
+// }
+
+// 2. matrix multiplication
+
 #include<iostream>
 using namespace std;
 int main(){
-    int r = 0, c = 0;
-    cout << "Enter the no. of row" << "\n";
+    int r = 0, c = 0, i=0, j=0;
+    cout << "Enter the no. of row of first matrix" << "\n";
     cin >> r;
-    cout << "Enter the no. of column" << "\n";
+    cout << "Enter the no. of column of first matrix" << "\n";
     cin >> c;
-    if(r==c){
-        int arr[r][c];
-        cout << "Enter the " <<r*c<< " values" << '\n';
-        for(int i=0; i<r; i++){
-            for(int j=0; j<c; j++){
-                cin>>arr[i][j];
+    cout << "Enter the no. of row of second matrix" << "\n";
+    cin >> i;
+    cout << "Enter the no. of column of second matrix" << "\n";
+    cin >> j;
+    if(c==i){
+        int a1[r][c];
+        int a2[i][j];
+        int ans[r][j];
+        int sum = 0;
+        cout << "Enter the " <<r*c<< " values of first matrix" << '\n';
+        for(int a=0; a<r; a++){
+            for(int b=0; b<c; b++){
+                cin>>a1[a][b];
             }
         }
-        cout<<"Matrix ="<<"\n";
-        for(int i=0; i<r; i++){
-            for(int j=0; j<c; j++){
-                cout<< arr[i][j] << "\t";
+        cout << "Enter the " <<i*j<< " values of second matrix" << '\n';
+        for(int a=0; a<i; a++){
+            for(int b=0; b<j; b++){
+                cin>>a2[a][b];
+            }
+        }
+
+        cout << "the first matrix is :" << "\n";
+        for(int a=0; a<r; a++){
+            for(int b=0; b<c; b++){
+                cout<< a1[a][b] << "\t";
             }
             cout << "\n";
         }
-        cout << "The transpose of the matrix is= "<< "\n";
-         for(int i=0; i<r; i++){
-            for(int j=i+1; j<c; j++){
-                int temp =arr[i][j];
-                arr[i][j]=arr[j][i];
-                arr[j][i]=temp;
+        cout << "the second matrix is: " << '\n';
+        for(int a=0; a<i; a++){
+            for(int b=0; b<j; b++){
+                cout<<a2[a][b]<<"\t";
+            }
+            cout << "\n";
+        }
+        cout<<"Multiplication of two matrix is:"<<"\n";
+        for(int a=0; a<r; a++){
+            for(int b=0; b<j; b++){
+                sum=0;
+                for(int k=0; k<c; k++){
+                    sum = sum + a1[a][k]*a2[k][b];
+                    ans[a][b]=sum;
+                }
             }
         }
-        for(int i=0; i<r; i++){
-            for(int j=0; j<c; j++){
-                cout<< arr[i][j] << "\t";
+        for(int a=0; a<r; a++){
+            for(int b=0; b<j; b++){
+                cout<<ans[a][b]<<"\t";
             }
             cout << "\n";
         }
     }
     else{
-        cout << "not allowed";
+        cout << "invalid choice for doing matrix multiplication"<< "\n";
     }
 }
-
-// 2. matrix multiplication
-
