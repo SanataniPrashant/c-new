@@ -22,5 +22,58 @@ int main()
 
     // in runtime we can give value more than its size because it will automatically build memory.
 
+    // char name[20];
+    // char srname[20];
+    // cout<<strlen(name)<<"\n";
+    // cout<<"Enter your name" << "\n";
+    // cin>> name;
+    //  cout<<"Enter your srname" << "\n";
+    // cin>> srname;
+    // cout<<strlen(name);
+    // cout<< "uppercase = " << strupr(name)<<"\n";
+    // cout<< "lowercase = " << strlwr(name)<<"\n";
+    // cout << strcat(name,srname)<<'\n'; //string concatenation
+    // cout<<"name = "<<name <<"srname = "<<srname << "\n";
+
+    // cout << strcpy(name,srname)<<'\n'; //it will override name with surname
+    // cout<<"name = "<<name <<"srname = "<<srname << "\n";
+
+    // char pwd[20];
+    // char repwd[20];
+    // cout<<"Enter your pwd" << "\n";
+    // cin>> pwd;
+    // cout<<"Enter your repwd" << "\n";
+    // cin>> repwd;
+    // if(stricmp(pwd,repwd)==0)
+    // {
+    //     cout << "correct" <<"\n";
+    // }
+    // else{
+    //     cout<< "incorrect"<<"\n";
+    // }
+    // cout << strrev(pwd);
+    // if(strcmp(pwd,repwd)==0)
+    // {
+    //     cout << "correct" <<"\n";
+    // }
+    // else{
+    //     cout<< "incorrect"<<"\n";
+    // }
+
+    char ram[20];
+    char temp[20];
+    cout <<"enter the value" <<'\n';
+    cin >>ram;
+    strcpy(temp,ram);
+    cout<< strrev(ram)<<"\n";
+    // if(strcmp(strrev(ram),temp)==0) or
+    if(strcmp(temp,ram)==0){ 
+        cout <<"pallendrom" <<"\n";
+    }
+    else{
+        cout << "not a pallendrom" <<'\n';
+    }
+
 
 }
+// w.a.p to check the given string is pallendrom or not 
