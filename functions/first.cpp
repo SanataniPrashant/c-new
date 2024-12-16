@@ -1,4 +1,5 @@
 // Functions: It is used to perform any task. It is a collection of data member (int a, b, c) and statments(cout or cin) / code(formula). 
+// function is a block of code that runs only when it is called.
 
 // Advantages: 1. reusable 2. memory efficient 3. time efficient 
 
