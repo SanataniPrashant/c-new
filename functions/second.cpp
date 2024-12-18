@@ -16,6 +16,22 @@
 // }
 
 // 2. W.A.P to find the factorial of any no. by using functions.
+// #include<iostream>
+// using namespace std;
+// int factorial(int n){
+//     int fact = 1;
+//     for(int i = 1; i <= n; i++){
+//         fact = fact * i;
+//     }
+//     return fact;
+// }
+// int main()
+// {
+//     cout << "factorial = " << factorial(10) << "\n";
+//     return 0;
+// }
+
+// 3. W.A.P to calculate the ncr 
 #include<iostream>
 using namespace std;
 int factorial(int n){
@@ -25,8 +41,21 @@ int factorial(int n){
     }
     return fact;
 }
-int main()
-{
-    cout << "factorial = " << factorial(10) << "\n";
+int ncr(int n, int r){
+    int fact_n = factorial(n);
+    int fact_r = factorial(r);
+    int fact_nmr = factorial(n-r);
+
+    return fact_n / (fact_r * fact_nmr);
+}
+int main(){
+    cout << "ncr = " << ncr(10, 5) << "\n";
+    int a = 10;
+    int* ptr = &a; // (pointer)
+    int** ptr2 = &ptr; // (pointer to pointer)
+    cout << "address of ptr2  = " << &ptr2 << "\n";
+    cout << "address of ptr  = " << &ptr << "\n";
+    cout << "address of a = " << ptr << "\n";
+    cout << *(ptr); // ( * -> dereferencing operator gets the value of that address)
     return 0;
 }
