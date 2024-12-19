@@ -79,40 +79,79 @@
 //     cout<<t2.sum();
 // }
 
-// multiple function class
-// function overloading in class 
+// multiple function class : class having multiple function in a single class.
+// function overloading in class : function overloading is a feature of c++ in which two or more function with same name can
+// be defined having different parameters. it is used to perform a single task in different ways.
 
-// 
-#include<iostream>
-using namespace std;
-static int e = 30;
-static int f = 20;
-class top{
-    static int a;
-    static int b;
-    public: static void sum(){
-        cout  << a+b << "\n";
-        cout  << e+f << "\n";
-    }
-};
-class top2{
-    static int a;
-    static int b;
-    public: static void multi(){
-        cout  << e*f << "\n";
-    }
-};
-class {
-    int a;
-    int b;
-    public:  void minus(){
-        cout  << e-f << "\n";
-    }
-} r;
-    int top:: a = 10;
-    int top:: b = 20;
-int main(){
-    top:: sum();
-    top2::multi();
-    r.minus();
-}
+// #include<iostream>
+// using namespace std;
+// class top1
+// {
+//     int a=10,b=20;
+//     public:int sum(){
+//         cout<<a+b<<"\n";
+//     }
+//     public: void sum(int e, int m, int l){
+//         cout<<e+m+l;
+//     }
+// };
+// int main(){
+//     top1 k;
+//     k.sum();
+//     k.sum(10,20,30);
+// }
+
+// static function
+
+// #include<iostream>
+// using namespace std;
+// static int e = 30;
+// static int f = 20;
+// class top{
+//     static int a;
+//     static int b;
+//     public: static void sum(){
+//         cout  << a+b << "\n";
+//         cout  << e+f << "\n";
+//     }
+// };
+// class top2{
+//     public: static void multi(){
+//         cout  << e*f << "\n";
+//     }
+// };
+// class {                   // class without name 
+//     int a;
+//     int b;
+//     public:  void minus(){
+//         cout  << e-f << "\n";
+//     }
+// } r;
+//     int top:: a = 10;
+//     int top:: b = 20;
+// int main(){
+//     top:: sum();
+//     top2::multi();
+//     r.minus();
+// }
+
+// composite class
+
+// #include<iostream>
+// using namespace std;
+// class virus{
+//     public: void affect(){
+//         cout << "your system got hacked" << "\n";
+//     }
+// };
+// class reward{
+//     virus v;
+//     public: void Prize(){
+//         cout << "you won $20000" << "\n";
+//         v.affect();
+//     }
+// };
+// int main(){
+//     reward r;
+//     r.Prize();
+// }

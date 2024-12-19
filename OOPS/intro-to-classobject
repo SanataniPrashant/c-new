@@ -36,7 +36,7 @@ function defined outside the class.
         public:int sum(){
            cout<<a+b<<"\n";
         }
-        public void sum(int e, int m, int l){
+        public: void sum(int e, int m, int l){
             cout<<e+m+l;
         }
     };
@@ -60,5 +60,8 @@ function defined outside the class.
         // =>> single class: if a program having only one class is called single class.
         // =>> multi-class: if a program having more than one classes is called multi-class.
         // anonymous class does not have class name.
+
+        // =>> composite class: A class which holds the object of previous class and we call the function of previous class inside the member function of composite class.
+        // 
         
 
