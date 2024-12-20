@@ -1,50 +1,51 @@
-=>> objects are the real world entities or entities in real world. like teachers 
-=>> class is like a collection of objects or blue-print of these entities.
-=>> attributes / properties are the characteristics of objects like name, age, gender etc.
-=>> methods are the actions that can be performed by objects like run, jump etc. (inside class if we use function called as attributes)
-=>> class is a blueprint or template for creating objects.
-=>> data member.
-=>> member function.
+// =>> objects are the real world entities or entities in real world. like teachers 
+// =>> class is like a collection of objects or blue-print of these entities.
+// =>> attributes / properties are the characteristics of objects like name, age, gender etc.
+// =>> methods are the actions that can be performed by objects like run, jump etc. (inside class if we use function called as attributes)
+// =>> class is a blueprint or template for creating objects.
+// =>> data member.
+// =>> member function.
 
-function defined inside the class.
-    class top1
-    {
-        int a=10,b=20;
-        public:int sum(){
-            return a+b;
-        }; // declare and defined inside the class
-    };
-function defined outside the class.
-    class top2
-    {
-        int a=10,b=20;
-        public:int sum();
-    };
-    int top2::sum(){
-        return a+b;
-    } // function declaared inside a class & but defined outside the class
-    int main(){
-        top1 pk;
-        cout<<pk.sum();
-        top2 t2;
-        cout<<t2.sum();
-    }
-    // function overloding in a class  
-        class top1
-    {
-        int a=10,b=20;
-        public:int sum(){
-           cout<<a+b<<"\n";
-        }
-        public: void sum(int e, int m, int l){
-            cout<<e+m+l;
-        }
-    };
-    int main(){
-        top1 f;
-        f.sum();
-        f.sum(2,3,5);
-    }
+// function defined inside the class.
+//     class top1
+//     {
+//         int a=10,b=20;
+//         public:int sum(){
+//             return a+b;
+//         }; // declare and defined inside the class
+//     };
+// function defined outside the class.
+//     class top2
+//     {
+//         int a=10,b=20;
+//         public:int sum();
+//     };
+//     int top2::sum(){
+//         return a+b;
+//     } // function declaared inside a class & but defined outside the class
+//     int main(){
+//         top1 pk;
+//         cout<<pk.sum();
+//         top2 t2;
+//         cout<<t2.sum();
+//     }
+
+//     // function overloding in a class  
+//         class top1
+//     {
+//         int a=10,b=20;
+//         public:int sum(){
+//            cout<<a+b<<"\n";
+//         }
+//         public: void sum(int e, int m, int l){
+//             cout<<e+m+l;
+//         }
+//     };
+//     int main(){
+//         top1 f;
+//         f.sum();
+//         f.sum(2,3,5);
+//     }
         // multiple function in a class 
 
         // function - static and non static function
@@ -62,6 +63,15 @@ function defined outside the class.
         // anonymous class does not have class name.
 
         // =>> composite class: A class which holds the object of previous class and we call the function of previous class inside the member function of composite class.
-        // 
+        
+        // modifier - public private protected
+
+        // ==>> conostructor : Initializes the memory to object.
+        // 1. It is called a special type of function .
+        // 2. constructor is used to allocate the memory of an object.
+        // 3. constructor does not have any return type .
+        // 4. by default the class having a constructor which is belongs to public specifier.
+
+        // =>> Default constructor :
         
 

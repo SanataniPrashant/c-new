@@ -155,3 +155,99 @@
 //     reward r;
 //     r.Prize();
 // }
+
+// =>> Default constructor:
+
+// #include<iostream>
+// using namespace std;
+// class top{
+//     public: top(){  // implicit calling
+//         cout << "default constructor called" << "\n";
+//     }
+//     public: void show(){   // explicit calling
+//         cout << "fhfejifjieio" << "\n";
+//     }
+// };
+// int main(){
+//     top t;
+//     t.show();
+// }
+
+// =>> parametrized constructor 
+
+// #include<iostream>
+// using namespace std;
+// class ATM
+// {
+//     public: ATM(int u, int p){  // implicit calling
+//     if(u == 111 && p == 9630){
+//         cout << "welcome" << "\n";
+//     }
+//     else{
+//         cout << "invalid" << "\n";
+//     }
+//     }
+//     ATM(){
+//         cout << "default constructor called" << "\n";
+//     }
+// };
+
+// int main()
+// {
+//     int acc , pass;
+//     cout<<"Enter the number" << "\n";
+//     cin>>acc;
+//     cout<<"Enter the number" << "\n";
+//     cin>>pass;
+//     ATM obj(acc,pass);// default constructor
+//     ATM obj2;
+    
+//     return 0;
+// }
+
+// constructor overloading : if a class has more than one constructor with different parameters is calles constructor overloading
+
+// this-> pointer:
+
+// #include<iostream>
+// using namespace std;
+// class student{
+//     int rno;
+//     public: student(int rno){
+//         this-> rno = rno;
+//     }
+//     void show(){
+//         cout << "Rno = " << rno ;
+//     }
+// };
+// int main(){
+//     student s(101);
+//     s.show();
+//     student s1(s);
+//      // shallow copy : it is inbuilt or default copy the data from one object to another. 
+//     s.show();
+// }
+
+// shallow copy
+#include<iostream>
+using namespace std;
+class student{
+    public:int r;
+    public: student(int rno){
+        r = rno;
+    }
+    void show(){
+        cout << "Rno = " << r ;
+    }
+};
+int main(){
+    student s(101);
+    s.show();
+    student s1(s);
+     // shallow copy : it is inbuilt or default copy the data from one object to another. 
+    s1.show();
+    s1.r = 555;
+    student s2(s1);
+    s2.show();
+
+}
