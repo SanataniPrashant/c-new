@@ -229,25 +229,60 @@
 // }
 
 // shallow copy
+
+// #include<iostream>
+// using namespace std;
+// class student{
+//     public:int r;
+//     public: student(int rno){
+//         r = rno;
+//     }
+//     void show(){
+//         cout << "Rno = " << r ;
+//     }
+// };
+// int main(){
+//     student s(101);
+//     s.show();
+//     student s1(s);
+//      // shallow copy : it is inbuilt or default copy the data from one object to another. 
+//     s1.show();
+//     s1.r = 555;
+//     student s2(s1);
+//     s2.show();
+
+// }
+
+// shallow copy using pointer
 #include<iostream>
+#include<string.h>
 using namespace std;
 class student{
-    public:int r;
-    public: student(int rno){
-        r = rno;
+    char *c;
+    public: student(char *s){
+        c= new char[20];
+        strcpy(c,s);
+    }
+    student(student &obj){
+        c= new char[20];
+        strcpy(c,obj.c);
     }
     void show(){
-        cout << "Rno = " << r ;
+        cout << "Name = " << c ;
+    }
+    void surname(char *s){
+        strcat(c,s);
     }
 };
 int main(){
-    student s(101);
-    s.show();
-    student s1(s);
-     // shallow copy : it is inbuilt or default copy the data from one object to another. 
+    student s1("rama");
     s1.show();
-    s1.r = 555;
     student s2(s1);
     s2.show();
-
+    s2.surname("mohan");
+    s1.show();
+    s2.show();
+    return 0;
 }
+
+// Deep copy 
