@@ -120,7 +120,7 @@
 //         cout  << e*f << "\n";
 //     }
 // };
-// class {                   // class without name 
+// class {                   // class without name anonymous class
 //     int a;
 //     int b;
 //     public:  void minus(){
@@ -254,35 +254,154 @@
 // }
 
 // shallow copy using pointer
-#include<iostream>
-#include<string.h>
-using namespace std;
-class student{
-    char *c;
-    public: student(char *s){
-        c= new char[20];
-        strcpy(c,s);
-    }
-    student(student &obj){
-        c= new char[20];
-        strcpy(c,obj.c);
-    }
-    void show(){
-        cout << "Name = " << c ;
-    }
-    void surname(char *s){
-        strcat(c,s);
-    }
-};
-int main(){
-    student s1("rama");
-    s1.show();
-    student s2(s1);
-    s2.show();
-    s2.surname("mohan");
-    s1.show();
-    s2.show();
-    return 0;
-}
+// #include<iostream>
+// #include<string.h>
+// using namespace std;
+// class student{
+//     char *c;
+//     public: student(char *s){
+//         c= new char[20];
+//         strcpy(c,s);
+//     }
+//     void show(){
+//         cout << "Name = " << c ;
+//     }
+//     void surname(char *s){
+//         strcat(c,s);
+//     }
+//     ~student(){
+//         cout << "memory released" <<"\n";
+//         delete c;
+//     }
+// };
+// int main(){
+//     student s1("rama");
+//     s1.show();
+//     student s2(s1);
+//     s2.show();
+//     s2.surname("mohan");
+//     s1.show();
+//     s2.show();
+//     return 0;
+// }
 
 // Deep copy 
+
+// #include<iostream>
+// #include<string.h>
+// using namespace std;
+// class student{
+//     char *c;
+//     public: student(char *s){
+//         c= new char[20];
+//         strcpy(c,s);
+//     }
+//     student(student &obj){
+//         c= new char[20];
+//         strcpy(c,obj.c);
+//     }
+//     void show(){
+//         cout << "Name = " << c ;
+//     }
+//     void surname(char *s){
+//         strcat(c,s);
+//     }
+//     ~student(){
+//         cout << "memory released" <<"\n";
+//         delete c;
+//     }
+// };
+// int main(){
+//     student s1("rama");
+//     s1.show();
+//     student s2(s1);
+//     s2.show();
+//     s2.surname("mohan");
+//     s1.show();
+//     s2.show();
+//     return 0;
+// }
+
+// Destructor: release the memory of an object.
+
+// Friend Function 
+// Friend function is a function that is defined inside a class but not a member of that class.
+// It can access the private and protected members of the class.
+// Friend function is used to provide a way to access the private and protected members of a class from
+// outside the class.
+// Friend function is a non-member function of a class.
+
+
+// #include<iostream>
+// using namespace std;
+// class student2;
+// class student1
+// {
+//     int marks = 90;
+//     friend void cmp(student1,student2);
+// };
+// class student2
+// {
+//     int marks = 80;
+//     friend void cmp(student1,student2);
+// };
+// void cmp(student1 s1,student2 s2){
+//     cout << "marks of s1 = " << s1.marks << endl;
+//     cout << "marks of s2 = " << s2.marks << endl;
+//     //     s1.marks = 100; // error: cannot assign to member variable 'marks
+//     //     s2.marks = 100; // error: cannot assign to member variable '
+//     if(s1.marks>s2.marks){
+//         cout << "s1 is greater than s2" << endl;
+//     }
+//     else{
+//         cout << "s2 is greater than s1" << endl;
+//     }
+// }
+// int main()
+// {
+//     student1 s1;
+//     student2 s2;
+//     cmp(s1,s2);
+// }
+
+// friend class :
+// friend class is a class that is declared as a friend of another class.
+// It is used to provide a way to access the private and protected members of a class from outside
+// the class.
+// friend class is a non-member function of a class.
+
+// #include<iostream>
+// using namespace std;
+// class AXIS
+// {
+//     int ammount = 10000;
+//     friend class RBI;
+// };
+// class SBI 
+// {
+//     int ammount = 30000;
+//     friend class RBI;
+// };
+// class RBI
+// {
+//     public: void balanceaxis(AXIS a)
+//     {
+//         cout << "balence of axis = " << a.ammount <<"\n";
+//     }
+//     public: void balancesbi(SBI s)
+//     {
+//         cout << "balence of SBI = " << s.ammount <<"\n";
+//     }
+// };
+// int main(){
+//     AXIS a;
+//     SBI s;
+//     RBI r;
+//     r.balanceaxis(a);
+//     r.balancesbi(s);
+//     return 0;
+// }
+
+// operator overloading:    
+// Operator overloading is a feature of C++ that allows us to redefine the behavior of operators.
+
