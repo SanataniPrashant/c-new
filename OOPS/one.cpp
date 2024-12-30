@@ -405,3 +405,54 @@
 // operator overloading:    
 // Operator overloading is a feature of C++ that allows us to redefine the behavior of operators.
 
+// complex data type ko solve karne ke liye operator-overloding use karenge.
+// unary without parrameter
+// binary with parameters 
+
+// #include<iostream>
+// using namespace std;
+// class top 
+// {
+//     int a = 10; 
+//     public: operator ++()
+//     {
+//         a++;
+//         cout <<a<<"\n";
+//     }
+//     public: operator --()
+//     {
+//         a--;
+//         cout <<a<<"\n";
+//     }
+// };
+// int main(){
+//     top p;
+//     ++p;
+//     --p;
+//     // int a= 90;
+//     // cout<<++a;
+//     // int p=90;  // error due to memeory already allocated 
+//     // cout << p;
+
+// }
+
+// w.a.p to add complex data-type
+// #include<iostream>
+// using namespace std;
+// class bhopal{
+//    int mile;
+//    public:bhopal(int m){
+//     mile = m;
+//    }
+//    operator +(bhopal &obj)
+//    {
+//     mile = mile + obj.mile;
+//     cout << "Total miles = " << mile;
+//    }
+//     };
+// int main(){
+//     bhopal start(12400);
+//     bhopal end(12500);
+//     start + (end);
+// }
+
