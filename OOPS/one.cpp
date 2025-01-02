@@ -451,8 +451,256 @@
 //    }
 //     };
 // int main(){
+
 //     bhopal start(12400);
 //     bhopal end(12500);
 //     start + (end);
 // }
+
+// inheritance:
+// By using Inheritance we cannot save memory we only can create less no. of object .
+// firstly memory allocated to parent class or  constructor of parent class then memory allocated to child class or constructor of child class.
+// firstly memory deallocated or released of child class  (destructor) then memory deallocated or released of parent class (destructor)
+
+//1. single inheritance:
+
+
+// #include<iostream>
+// using namespace std;
+// class RBI {
+//     int t;
+//     public: RBI(){
+//         cout << "RBI Memory" << "\n";
+//     }
+//     ~RBI(){
+//         cout << "RBI Memory deallocated or released" << "\n";
+//     }
+//     public: void show(){
+//         cout << "RBI Class" << "\n";
+//     }
+//     public: void ram(){
+//         cout << "RBI RAM" << "\n";
+//     }
+// };
+
+// class SBI : public RBI 
+// {
+//     int a;
+//     public: SBI(){
+//         cout << "SBI Memory" << "\n";
+//     }
+//     ~SBI(){
+//         cout << "SBI Memory deallocated or released" << "\n";
+//     }
+//     public: void show(){
+//         cout << "SBI Class" << "\n";
+//     }
+// };
+
+// int main(){
+//     SBI s;
+//     s.show();
+//     s.ram();
+//     cout << "Size of SBI = " << sizeof(s) << "\n";
+//     cout << "Size of RBI = " << sizeof(RBI) << "\n";
+//     return 0;
+
+// }
+
+// 2. Multilevel:
+
+// #include<iostream>
+// using namespace std;
+// class RBI {
+//     int t;
+//     public: RBI(){
+//         cout << "RBI Memory" << "\n";
+//     }
+//     ~RBI(){
+//         cout << "RBI Memory deallocated or released" << "\n";
+//     }
+//     public: void show(){
+//         cout << "RBI Class" << "\n";
+//     }
+//     public: void ram(){
+//         cout << "RBI RAM" << "\n";
+//     }
+// };
+
+// class SBI : public RBI 
+// {
+//     int a;
+//     public: SBI(){
+//         cout << "SBI Memory" << "\n";
+//     }
+//     ~SBI(){
+//         cout << "SBI Memory deallocated or released" << "\n";
+//     }
+//     public: void show(){
+//         cout << "SBI Class" << "\n";
+//     }
+// };
+
+// class customer : public SBI
+// {
+//     int b;
+//     public: customer(){
+//         cout << "Customer Memory" << "\n";
+//     }
+//     ~customer(){
+//         cout << "Customer Memory deallocated or released" << "\n";
+//     }
+//     public: void account(){
+//         cout << "Customer Class" << "\n";
+//     }
+// };
+
+// int main(){
+//     customer s;
+//     s.show();
+//     s.ram();
+//     s.account();
+//     cout << "Size of RBI = " << sizeof(RBI) << "\n";
+//     cout << "Size of SBI = " << sizeof(SBI) << "\n";
+//     cout << "Size of customer = " << sizeof(customer) << "\n";
+
+//     return 0;
+
+// }
+
+// 3. Multiple Inheritance: 
+// In a multiple inheritance we can inherit more than one class at a time.
+
+// #include<iostream>
+// using namespace std;
+// class SBI {
+//     public: void sbiacnt(){
+//         cout << "SBI" << "\n";
+//     }
+// };
+// class Axis {
+//     public: void axisacnt(){
+//         cout << "Axis" << "\n";
+//     }
+// };
+// class customer : public SBI, public Axis {
+//     public: void msg(){
+//         cout << "Welcome" << "\n";
+//     }
+// };
+// int main(){
+//     customer s;
+//     s.sbiacnt();
+//     s.axisacnt();
+//     s.msg();
+//     return 0;
+// }
+
+
+// Ambiguidity:
+//(Diamond Problem): Diamond problem arises on multiple inheritance due to signature.
+
+// Ambiguidity is a situation where the compiler is unable to decide which function to call when
+// there are multiple functions with the same name in the classes.
+
+// #include<iostream>
+// using namespace std;
+// class SBI {
+//     public: SBI(){
+//         cout << "SBI" << "\n";
+//     }
+//     public: void show(){  // signature
+//         cout << "SBI Account no." << "\n";
+//     }
+//     ~SBI(){
+//         cout << "SBI Destructor" << "\n";
+//     }
+// };
+// class Axis {
+//     public: Axis(){
+//         cout << "Axis" << "\n";
+//     }
+//     public: void show(){  // signature
+//         cout << "Axis Account no." << "\n";
+//     }
+//     ~Axis(){
+//         cout << "Axis Destructor" << "\n";
+//     }
+// };
+// class customer : public SBI, public Axis { 
+//     public: void msg(){
+//         cout << "Welcome" << "\n";
+//     }
+//     public: void show(){  // signature
+//     // SBI::show();  // call SBI::show()
+//     // Axis::show();  // call Axis::show()
+    
+//     cout << "Customer name" << "\n";
+//     }
+//     ~customer(){
+//         cout << "Customer Destructor" << "\n";
+//     }
+// };
+// int main(){
+//     customer s;
+//     s.show();  
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// class SBI {
+//     public: SBI(){
+//         cout << "SBI" << "\n";
+//     }
+//     public: void show(){  // signature
+//         cout << "SBI Account no." << "\n";
+//     }
+//     ~SBI(){
+//         cout << "SBI Destructor" << "\n";
+//     }
+// };
+// class Axis {
+//     public: Axis(){
+//         cout << "Axis" << "\n";
+//     }
+//     public: void show(){  // signature
+//         cout << "Axis Account no." << "\n";
+//     }
+//     ~Axis(){
+//         cout << "Axis Destructor" << "\n";
+//     }
+// };
+// class customer : private SBI, private Axis { 
+//     public: customer(){
+//         cout << " customer Welcome" << "\n";
+//         SBI::show();  // call SBI::show()
+//         Axis::show();  // call Axis::show()
+//     }
+    
+//     // public: void show(){  // signature
+//     // // SBI::show();  // call SBI::show()
+//     // // Axis::show();  // call Axis::show()
+    
+//     // cout << "Customer name" << "\n";
+//     // }
+//     ~customer(){
+//         cout << "Customer Destructor" << "\n";
+//     }
+// };
+// int main(){
+//     customer s;
+//     // s.show();  
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
 
