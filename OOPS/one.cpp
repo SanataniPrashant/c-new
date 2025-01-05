@@ -695,10 +695,166 @@
 // }
 
 
+// Protected function can accessed only inside the function of inherited class.
+
+// #include<iostream>
+// using namespace std;
+// class college {
+//     protected: void show(){
+//         cout << "College name" << "\n";
+//     }
+// };
+// class student : public college 
+// {
+//     public: void message(){
+//         college::show();  // call college::show()
+//         cout << "Student name" << "\n";
+//     }
+// };
+// int main(){
+//     student s;
+//     s.message();
+//     return 0;
+// }
+
+// Hierachicle Inheritance :  (server-client architecture)
+
+// #include<iostream>
+// using namespace std;
+// class RBI{
+//     public: void man(){
+//         cout << "RBI" << '\n';
+//     }
+// };
+// class SBI : public RBI
+// {
+//     public: void dam(){
+//         cout << "SBI" << "\n";
+//     }
+// };
+// class UBI : public RBI
+// {
+//     public: void sam(){
+//         cout << "UBI" << "\n";
+//     }
+// };
+// class PNB : public RBI
+// {
+//     public: void cam(){
+//         cout << "PNB" << "\n";
+//     }
+// };
+// int main(){
+//     SBI s;
+//     s.man();
+//     s.dam();
+//     UBI u;
+//     u.man();
+//     u.sam();
+//     PNB p;
+//     p.man();
+//     p.cam();
+// }
 
 
 
+// Hybrid  Inheritance : Combination of differnt tyopes of inheritance is called  hybrid inheritance.
 
+// virtual pointer is used to resolve diamond problem in inheritance. it takes 8 bytes memory bydefault. and In this more memory required.
+
+// #include<iostream>
+// using namespace std;
+// class RBI{
+//     public: void man(){
+//         cout << "RBI" << '\n';
+//     }
+// };
+// class SBI : virtual public RBI  // virtual pointer
+// {
+//     public: void dam(){
+//         cout << "SBI" << "\n";
+//     }
+// };
+// class UBI : virtual public RBI
+// {
+//     public: void sam(){
+//         cout << "UBI" << "\n";
+//     }
+// };
+// class cust : public SBI, public UBI
+// {
+//     public: void cam(){
+//         cout << "PNB" << "\n";
+//     }
+// };
+// int main(){
+//     SBI s;
+//     s.man();
+//     s.dam();
+//     UBI u;
+//     u.man();
+//     u.sam();
+//     cust c;
+//     c.dam();
+//     c.sam();
+//     c.cam();
+//     c.man();
+// }
+
+
+
+//  Polymorphism :
+
+//  There are two types of polymorphism: compile-time polymorphism and runtime polymorphism.
+
+//  Compile-time polymorphism is achieved through function overloading, while runtime polymorphism is achieved through
+//  function overriding or method overriding.
+
+//  Polymorphism is a key feature of object-oriented programming (OOP) that allows for
+//  more flexibility and generic code.
+
+#include<iostream>
+using namespace std;
+class RBI
+{
+    public:  // virtual void man()=0; // Pure Virtual Function
+    virtual void loan(){  // virtual function
+        cout << "RBI Class" << "\n";
+    }
+    virtual void  show(){
+        cout << "RBI Bank" << "\n";
+    }
+};
+
+class AXIS : public RBI
+{
+    public: void loan(){
+        cout << "AXIS Class" << "\n";
+    }
+    void show(){
+        cout << "AXIS Bank" << "\n";
+    }
+};
+class SBI : public RBI
+{
+    public: void loan(){
+        cout << "SBI Class" << "\n";
+    }
+    void show(){
+        cout << "SBI Bank" << "\n";
+    }
+};
+
+int main(){
+    RBI *p;
+    AXIS a;
+    SBI b;
+    RBI r;
+    p = &a;
+    p->loan();
+    p->show();
+
+}
 
 
 

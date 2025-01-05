@@ -171,7 +171,16 @@
 // using namespace std;
 // int main()
 // {
-//     int a[]={15,22,3,4,5};
+//     // int a[]={15,22,3,4,5};
+
+//     int n;
+//     cout<<"Enter the number of elements in the array: ";
+//     cin>>n;
+//     int a[n];
+//     cout<<"Enter the " << n << "elements of the array: ";
+//     for(int i=0;i<n;i++){
+//         cin>>a[i];
+//     }
 //     int min = a[0];
 //     int siz=sizeof(a)/sizeof(a[0]);
 //     for(int i=0;i<= siz-1; i++){
@@ -189,14 +198,19 @@
 // using namespace std;
 // int main()
 // {
-//     int a[]={15,22,3,4,5};
-//     int min = a[0];
+//     int a[]={5,1,15,22,3,4,5};
+//     int min = a[0],  max = a[0];
 //     int siz=sizeof(a)/sizeof(a[0]);
-//     for(int i=0;i<= siz-1; i++){
-//         if(a[i]>min){
+//     for(int i=1;i<= siz-1; i++){
+//         if(a[i]<min){
 //             min=a[i];
 //         }
+//         if(a[i]>max){
+//             max = a[i];
+//         }
 //     }
+//     cout<<min;
+//     cout<<max;
 // }
 
 // w.a.p to print only even no. in array.
