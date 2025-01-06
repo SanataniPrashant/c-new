@@ -115,48 +115,48 @@
 // return 0;
 // }
 
-// #include<iostream>
-// using namespace std;
-// int main(){
-//     int r = 0, c = 0;
-//     cout << "Enter the no. of row" << "\n";
-//     cin >> r;
-//     cout << "Enter the no. of column" << "\n";
-//     cin >> c;
-//     if(r==c){
-//         int arr[r][c];
-//         cout << "Enter the " <<r*c<< " values" << '\n';
-//         for(int i=0; i<r; i++){
-//             for(int j=0; j<c; j++){
-//                 cin>>arr[i][j];
-//             }
-//         }
-//         cout<<"Matrix ="<<"\n";
-//         for(int i=0; i<r; i++){
-//             for(int j=0; j<c; j++){
-//                 cout<< arr[i][j] << "\t";
-//             }
-//             cout << "\n";
-//         }
-//         cout << "The transpose of the matrix is= "<< "\n";
-//          for(int i=0; i<r; i++){
-//             for(int j=i+1; j<c; j++){
-//                 int temp =arr[i][j];
-//                 arr[i][j]=arr[j][i];
-//                 arr[j][i]=temp;
-//             }
-//         }
-//         for(int i=0; i<r; i++){
-//             for(int j=0; j<c; j++){
-//                 cout<< arr[i][j] << "\t";
-//             }
-//             cout << "\n";
-//         }
-//     }
-//     else{
-//         cout << "not allowed";
-//     }
-// }
+#include<iostream>
+using namespace std;
+int main(){
+    int r = 0, c = 0;
+    cout << "Enter the no. of row" << "\n";
+    cin >> r;
+    cout << "Enter the no. of column" << "\n";
+    cin >> c;
+    if(r==c){
+        int arr[r][c];
+        cout << "Enter the " <<r*c<< " values" << '\n';
+        for(int i=0; i<r; i++){
+            for(int j=0; j<c; j++){
+                cin>>arr[i][j];
+            }
+        }
+        cout<<"Matrix ="<<"\n";
+        for(int i=0; i<r; i++){
+            for(int j=0; j<c; j++){
+                cout<< arr[i][j] << "\t";
+            }
+            cout << "\n";
+        }
+        cout << "The transpose of the matrix is= "<< "\n";
+         for(int i=0; i<r; i++){
+            for(int j=i+1; j<c; j++){
+                int temp =arr[i][j];
+                arr[i][j]=arr[j][i];
+                arr[j][i]=temp;
+            }
+        }
+        for(int i=0; i<r; i++){
+            for(int j=0; j<c; j++){
+                cout<< arr[i][j] << "\t";
+            }
+            cout << "\n";
+        }
+    }
+    else{
+        cout << "not allowed";
+    }
+}
 
 // 2. matrix multiplication
 
@@ -228,19 +228,19 @@
 
 // 3D- ARRAY :
 // multi-linked-list
-#include<iostream>
-using namespace std;
-int main()
-{
-    int a[2][3][3]={1,2,3,4,5,6,7,8,9,10,11,12};
-    // table row column
-    for(int t = 0; t<2; t++){
-        for(int r = 0; r<3; r++){
-            for(int c = 0; c<2; c++){
-                cout<<a[t][r][c]<<"\t";
-            }
-            cout<< "\n";
-        }
-        cout<<"\n";
-    }
-}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a[2][3][3]={1,2,3,4,5,6,7,8,9,10,11,12};
+//     // table row column
+//     for(int t = 0; t<2; t++){
+//         for(int r = 0; r<3; r++){
+//             for(int c = 0; c<2; c++){
+//                 cout<<a[t][r][c]<<"\t";
+//             }
+//             cout<< "\n";
+//         }
+//         cout<<"\n";
+//     }
+// }

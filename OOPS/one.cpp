@@ -199,8 +199,8 @@
 //     cin>>acc;
 //     cout<<"Enter the number" << "\n";
 //     cin>>pass;
-//     ATM obj(acc,pass);// default constructor
-//     ATM obj2;
+//     ATM obj(acc,pass);// parameterized constructor
+//     ATM obj2;// default constructor
     
 //     return 0;
 // }
@@ -813,50 +813,86 @@
 //  Polymorphism is a key feature of object-oriented programming (OOP) that allows for
 //  more flexibility and generic code.
 
-#include<iostream>
-using namespace std;
-class RBI
-{
-    public:  // virtual void man()=0; // Pure Virtual Function
-    virtual void loan(){  // virtual function
-        cout << "RBI Class" << "\n";
-    }
-    virtual void  show(){
-        cout << "RBI Bank" << "\n";
-    }
-};
+// #include<iostream>
+// using namespace std;
+// class RBI
+// {
+//     public:  // virtual void man()=0; // Pure Virtual Function
+//     virtual void loan(){  // virtual function
+//         cout << "RBI Class" << "\n";
+//     }
+//     virtual void  show(){
+//         cout << "RBI Bank" << "\n";
+//     }
+// };
 
-class AXIS : public RBI
-{
-    public: void loan(){
-        cout << "AXIS Class" << "\n";
-    }
-    void show(){
-        cout << "AXIS Bank" << "\n";
-    }
-};
-class SBI : public RBI
-{
-    public: void loan(){
-        cout << "SBI Class" << "\n";
-    }
-    void show(){
-        cout << "SBI Bank" << "\n";
-    }
-};
+// class AXIS : public RBI
+// {
+//     public: void loan(){
+//         cout << "AXIS Class" << "\n";
+//     }
+//     void show(){
+//         cout << "AXIS Bank" << "\n";
+//     }
+// };
+// class SBI : public RBI
+// {
+//     public: void loan(){
+//         cout << "SBI Class" << "\n";
+//     }
+//     void show(){
+//         cout << "SBI Bank" << "\n";
+//     }
+// };
 
-int main(){
-    RBI *p;
-    AXIS a;
-    SBI b;
-    RBI r;
-    p = &a;
-    p->loan();
-    p->show();
+// int main(){
+//     RBI *p;
+//     AXIS a;
+//     SBI b;
+//     RBI r;
+//     p = &a;
+//     p->loan();
+//     p->show();
 
-}
-
-
+// }
 
 
+// Pure-virtual function 
+// A pure-virtual function is a virtual function that is declared with virtual keyword and initialized with zero.
+// Pure-virtual function declared in class that class is called as abstract class.
 
+// #include<iostream>
+// using namespace std;
+// class Animal{
+//     public: virtual void sound()=0;
+// };
+// class Dog : public Animal
+// {
+//     public: void sound(){
+//         cout << "Barking" << "\n";
+//     }
+// };
+// class Cat : public Animal
+// {
+//     public: void sound(){
+//         cout << "Meowing" << "\n";
+//     }
+// };
+// class Lion: public Animal{
+//     public: void sound(){
+//         cout << "Roaring" << "\n";
+//     }
+// };
+// int main(){
+//     Animal *p;
+//     Dog d;
+//     Cat c;
+//     Lion l;
+//     p = &d;
+//     p->sound();
+//     p = &c;
+//     p->sound();
+//     p = &l;
+//     p->sound();
+//     return 0;
+// }
