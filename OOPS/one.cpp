@@ -896,3 +896,110 @@
 //     p->sound();
 //     return 0;
 // }
+
+
+
+
+// Disinheritance :  (It blocks the permission to override the function)
+
+// #include<iostream>
+// using namespace std;
+// class company{
+//     public: virtual void empInfo()  // final  // if used we cannot  reride the function
+//     {
+//         cout << "Total no. of employee : 1000 " << "\n";
+//     }
+// };
+// class company1 : public company
+// {
+//     public: void empInfo()
+//     {
+//         cout << "Total no. of employee : 500 " << "\n";
+//     }
+// };
+// int main(){
+//     company1 c1;
+//     c1.empInfo();
+// }
+
+
+// Exception handling : 
+// abnormal condition is called exception and exception handler is used to handle the exception ( try, catch, final )
+
+// try{
+//     // code that may throw an exception
+// }
+// catch(type_of_exception e){
+//     // code to handle the exception
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int a = 0, b = 0;
+//     cout << "Enter the first no." << "\n";
+//     cin >> a;
+//     cout << "Enter the second no." << "\n";
+//     cin >> b;
+//     try{
+//         if (b == 0)
+//         {
+//         throw  b; // throw an exception
+//         }
+//         cout << "Division of " << a << " by " << b << " is " << a/b;
+//     }
+//     catch(int e)
+//     {
+//         cout << "Error : Division by zero is not allowed " << "\n";
+//         cout << "Enter the second no." << "\n";
+//         cin >> b ;
+//         cout << "Division of " << a << " by " << b << " is " << a/b;
+//     }
+// }
+
+
+// Multiple Catch :
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int b = 0;
+//     cout << "Enter either 1,2 or 3 " << "\n";
+//     cin >> b;
+//     try
+//     {
+//         if (b == 1)
+//         {
+//             throw 1; // throw an exception
+//         }
+//         else if (b == 2)
+//         {
+//             throw 20.52; // throw an exception
+//         }
+//         else if (b == 3)
+//         {
+//             throw 'a'; // throw an exception
+//         }
+//         cout << "Welcome" << "\n";
+//     }
+//     catch(int e)
+//     {
+//         cout << "Caught an integer exception " << e << "\n";
+//     }
+//     catch(double e)
+//     {
+//         cout << "Caught a double exception " << e << "\n";
+//     }
+//     catch(char e)
+//     {
+//         cout << "Caught a character exception " << e << "\n";
+//     }
+//     //     catch(...) // catch all exceptions (elipse) handles any kind of abnormal situation
+//     //     {
+//     //         cout << "Caught an unknown exception " << "\n";
+//     //     }
+//     cout << "finished" << "\n";
+//     return 0;
+// }
